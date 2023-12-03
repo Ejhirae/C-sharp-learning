@@ -229,7 +229,8 @@ usage- bool isMale = true;
 
     }
 
-    #While loops
+# While loops
+
      //while loop
         string[] names = { "Victor", "Edward", "Amarachi", "Kitan" };
 
