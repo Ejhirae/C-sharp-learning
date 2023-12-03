@@ -84,12 +84,16 @@ usage- bool isMale = true;
 
     }
 
+    //Get Details Function
+
     static void getDetails(int age, string name)
     {
 
     Console.WriteLine("Your name is "+ name +  " and you are "+age+" years old.");
 
     }
+
+    //Return Power Function
 
     static double returnPow(double baseNumber, double powerNumber)
     {
@@ -129,6 +133,8 @@ usage- bool isMale = true;
 
     }
 
+    //Decision Maker Function
+
     static void decisionMaker(bool isRaining)
 
     {
@@ -157,6 +163,8 @@ usage- bool isMale = true;
     }
 
     }
+
+    //Election Decision Function
 
     static void electionDescision(int age) {
 
