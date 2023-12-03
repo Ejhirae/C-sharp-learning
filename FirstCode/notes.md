@@ -158,7 +158,7 @@ usage- bool isMale = true;
 
     }
 
-static void electionDescision(int age) {
+    static void electionDescision(int age) {
 
     Console.WriteLine("AI: How old are you?");
 
