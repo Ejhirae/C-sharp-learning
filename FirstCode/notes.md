@@ -20,88 +20,88 @@ Boolean - True or false
 usage- bool isMale = true;
 
 ## Working with Numbers
-int age = 17;
+    int age = 17;
 
-age = --age - ++age;
+    age = --age - ++age;
 
-Console.WriteLine(age);
+    Console.WriteLine(age);
 
-int x = 4;
+    int x = 4;
 
-x = x++ + ++x;
+    x = x++ + ++x;
 
-Console.WriteLine(x);
+    Console.WriteLine(x);
 
-Console.WriteLine(Math.Floor(4.8));
+    Console.WriteLine(Math.Floor(4.8));
 
 ## Getting user inputs
-Console.Write("Enter first number: ");
+    Console.Write("Enter first number: ");
 
-string num1 = Console.ReadLine()!;
+    string num1 = Console.ReadLine()!;
 
-Console.Write("Enter second number: ");
+    Console.Write("Enter second number: ");
 
-string num2 = Console.ReadLine()!;
+    string num2 = Console.ReadLine()!;
 
-int sum = Convert.ToInt32(num1) + Convert.ToInt32(num2);
+    int sum = Convert.ToInt32(num1) + Convert.ToInt32(num2);
 
-Console.WriteLine("Your answer is: " + sum.ToString() );
+    Console.WriteLine("Your answer is: " + sum.ToString() );
 
-Console.Beep();
+    Console.Beep();
 
 ## Arrays
-int[] scores = { 1, 2, 3, 4, 5, 6 };
+    int[] scores = { 1, 2, 3, 4, 5, 6 };
 
-Console.WriteLine(scores[0].ToString() + scores[1].ToString() + scores[2].ToString() + scores[3].ToString() + scores[4].ToString() + scores[5].ToString());
+    Console.WriteLine(scores[0].ToString() + scores[1].ToString() + scores[2].ToString() + scores[3].ToString() + scores[4].ToString() + scores[5].ToString());
 
-string[] names = { "Victor", "Edward", "Amarachi", "Kitan" };
+    string[] names = { "Victor", "Edward", "Amarachi", "Kitan" };
 
-Console.WriteLine(names[1] + names[2] + names[0] + names[3]);
+    Console.WriteLine(names[1] + names[2] + names[0] + names[3]);
 
 ## Methods and Return
-string name = "Victor";
+    string name = "Victor";
 
-int age = 20;
+    int age = 20;
 
-int num1 = -2, num2 = 15;
+    int num1 = -2, num2 = 15;
 
-Console.WriteLine("Your sum is: "+ sumTwoNumbers(12,12));
+    Console.WriteLine("Your sum is: "+ sumTwoNumbers(12,12));
 
-Console.WriteLine("Your sum is: " + sumTwoNumbers(num1, num2));
+    Console.WriteLine("Your sum is: " + sumTwoNumbers(num1, num2));
 
-getDetails(16, "Irene");
+    getDetails(16, "Irene");
 
-getDetails(age, name);
+    getDetails(age, name);
 
-Console.WriteLine(returnPow(2, 3));
+    Console.WriteLine(returnPow(2, 3));
 
-}
+    }
 
-static int sumTwoNumbers(int num1, int num2)
-{
+    static int sumTwoNumbers(int num1, int num2)
+    {
 
-return num1 + num2;
+    return num1 + num2;
 
-}
+    }
 
-static void getDetails(int age, string name)
-{
+    static void getDetails(int age, string name)
+    {
 
-Console.WriteLine("Your name is "+ name +  " and you are "+age+" years old.");
+    Console.WriteLine("Your name is "+ name +  " and you are "+age+" years old.");
 
-}
+    }
 
-static double returnPow(double baseNumber, double powerNumber)
-{
+    static double returnPow(double baseNumber, double powerNumber)
+    {
 
-return Math.Pow(baseNumber, powerNumber);
+    return Math.Pow(baseNumber, powerNumber);
 
-}
+    }
 
 ## IF Statements
-static double tempConverter(double temp, char degrees)
+    static double tempConverter(double temp, char degrees)
 
-{
+    {
 
     if (degrees == 'F' || degrees == 'f') {
 
@@ -127,11 +127,11 @@ static double tempConverter(double temp, char degrees)
 
     }
 
-}
+    }
 
-static void decisionMaker(bool isRaining)
+    static void decisionMaker(bool isRaining)
 
-{
+    {
 
     string computerResponse;
 
@@ -156,7 +156,7 @@ static void decisionMaker(bool isRaining)
 
     }
 
-}
+    }
 
 static void electionDescision(int age) {
 
@@ -184,12 +184,12 @@ static void electionDescision(int age) {
 
     }
 
-}
+    }
 
 # Switch Statements
-static double switchCalculator(double num1, double num2, char operatorChar)
+    static double switchCalculator(double num1, double num2, char operatorChar)
 
-{
+    {
 
     switch (operatorChar)
 
@@ -219,4 +219,4 @@ static double switchCalculator(double num1, double num2, char operatorChar)
 
     }
 
-}
+    }
