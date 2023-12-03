@@ -99,3 +99,66 @@ return Math.Pow(baseNumber, powerNumber);
 }
 
 ## IF Statements
+static double tempConverter(double temp, char degrees)
+{
+    if (degrees == 'F' || degrees == 'f') {
+        return (temp - 32) * 5 / 9;
+    } else if (degrees == 'C' || degrees == 'c')
+    {
+        return (temp * 9 / 5) + 32;
+    }
+    else
+    {
+        Console.WriteLine("Invalid degree detected");
+        return 0.0;
+    }
+}
+
+static void decisionMaker(bool isRaining)
+{
+    string computerResponse;
+    Console.WriteLine("Human Question: Should I go to class?");
+    if (isRaining == false)
+    {
+        computerResponse = "Computer Response: Go to class. It is not raining";
+        Console.WriteLine(computerResponse);
+    }
+    else
+    {
+        computerResponse = "Computer Response: No do not go to class. It is raining";
+        Console.WriteLine(computerResponse);
+    }
+}
+static void electionDescision(int age) {
+    Console.WriteLine("AI: How old are you?");
+    Console.WriteLine("Me: "+ age);
+    if (age >= 18)
+    {
+        Console.WriteLine("AI: You are eligible to vote.");
+    }
+    else
+    {
+        int yearsTillEligible = 18 - age;
+        Console.WriteLine("AI: You are not eligible to vote.");
+        Console.WriteLine("AI: Come back in the next " + yearsTillEligible +" year(s).");
+    }
+}
+
+# Switch Statements
+static double switchCalculator(double num1, double num2, char operatorChar)
+{
+    switch (operatorChar)
+    {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num1 / num2;
+        default:
+            Console.WriteLine("Invalid Operator or Operator not found");
+            return 0;
+    }
+}
