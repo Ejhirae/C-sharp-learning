@@ -19,6 +19,9 @@ Decimal -28-29 significant digits (128 bit) degree of precision
 Boolean - True or false
 usage- bool isMale = true;
 
+When calling a stateless method, you don't need to create a new instance of its class first.
+When calling a stateful method, you need to create an instance of the class, and access the method on the object.
+
 ## Working with Numbers
     int age = 17;
 
