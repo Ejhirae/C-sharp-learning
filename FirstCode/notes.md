@@ -1,3 +1,8 @@
+## Verbatim string literal
+A verbatim string literal will keep all whitespace and characters without the need to escape the backslash. To create a verbatim string, use the @ directive before the literal string.
+    Console.WriteLine(@"Names of people
+        Victor, Irene");
+
 ## Data Types in C#
 Different types of Variables in C#
 String - 
