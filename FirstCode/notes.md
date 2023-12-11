@@ -19,7 +19,7 @@ Float - 7 digits (32 bit) degree of precision
 Double-15-16 digits (64 bit) degree of precision
 usuage - double characterGpa = 3.94;
 
-Decimal -28-29 significant digits (128 bit) degree of precision
+Decimal -28-29 significant digits (128 bit) degree of precision e.g. 2.34m
 
 Boolean - True or false
 usage- bool isMale = true;
