@@ -323,3 +323,28 @@ When calling a stateful method, you need to create an instance of the class, and
         {
             Console.WriteLine(name);
         }
+
+# GPA Calculator 
+
+int[,] combinedList = {{4,3},{3,3},{3,4},{3,4},{4,3}};
+
+int totalScore = 1;
+
+double totalQualityPoints = 0.0, totalCreditHours = 0.0;
+
+for(int i = 0; i < combinedList.GetLength(0); i++ ){
+
+    int grade = combinedList[i,0];
+    
+    int credit = combinedList[i,1];
+
+    totalScore = grade * credit;
+    
+     totalQualityPoints += totalScore;
+     
+     totalCreditHours += credit;
+     
+}
+
+Console.WriteLine(totalQualityPoints/totalCreditHours);
+
